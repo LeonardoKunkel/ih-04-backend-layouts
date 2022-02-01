@@ -11,7 +11,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs')
 
 // 3. RUTAS
-
+app.use('/', require('./routes/index.routes'))
 
 // 4. SERVIDOR
 app.listen(process.env.PORT, () => {
